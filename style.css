@@ -64,7 +64,7 @@ body {
           justify-content: flex-end;
 }
 #app #calculator .screen-container .result .number {
-  font-size: 50px;
+  font-size: 33px;
   font-weight: 800;
 }
 #app #calculator .btn-container {
@@ -156,7 +156,7 @@ body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   margin: auto;
-  color: #ffffff;
+  color: #000000;
 }
 #app #calculator .btn-container .row .btn:nth-child(1) {
   border-left: none;
@@ -174,7 +174,7 @@ body {
   bottom: -12px;
   width: calc(33% * 1.25);
   height: calc(100% * 1.25);
-  background: #000000;
+  background: #a1a1a1;
   border-bottom-right-radius: 8px;
   border: 0.5px rgba(0, 0, 0, 0.0001);
 }
@@ -186,6 +186,7 @@ body {
           animation-delay: .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  background-color: #a1a1a1;
 }
 #app #calculator .btn-container .row .btn#result.animate {
   -webkit-animation: fade 0.12s ease-in-out;
