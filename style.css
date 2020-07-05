@@ -156,7 +156,7 @@ body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   margin: auto;
-  color: #4e4e4e;
+  color: #ffffff;
 }
 #app #calculator .btn-container .row .btn:nth-child(1) {
   border-left: none;
