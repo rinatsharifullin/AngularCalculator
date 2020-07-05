@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+            <!-- Done by Rinat Sharifullun, 2020 -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Title for your webpage -->
+            <title></title>
+            <!-- <meta name="keywords" content=""> -->
+            <!-- <meta name="description" content=""> -->
+            <!-- <meta name="author" content="Rinat Sharifullin"> -->
+            <!-- <link rel="shortcut icon" type="image/jpg" href="images/"> -->
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <!-- <style type="text/css"></style> -->
+            <!-- <script src="https://kit.fontawesome.com/87e811ac08.js" crossorigin="anonymous"></script> -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+            <script src="script.js"></script>
+        </head>
+
+        <body ng-app="Calc" ng-controller="contr">
+            
+            <div id="app"   v-cloak style="max-width: 600px">
+                <div id="calculator">
+                    <div class="screen-container">
+                        <div class="result">
+                            <transition name="slide-fade">
+                            <div class="number" :style="{fontSize : fontSize + 'px'}" v-if="tempResult !== ''"  >{{ tempResult }}</div>
+                            </transition>
+                        </div>
+                        <div class="calculation">
+                            <div class="number" >{{ calculation}}</div>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <div class="oper-container">
+                                <div class="btn" id="clear"  ng-click="clear();">
+                                    <div class="number">AC</div>
+                                </div>
+                                <div class="btn operations divide"  ng-click="append(' / ');">
+                                    <div class="number">÷</div>
+                                </div>
+                                <div class="btn operations multiplication" ng-click="append(' * ')">
+                                    <div class="number">×</div>
+                                </div>
+                                <div class="btn operations plus" ng-click="append(' + ')">
+                                    <div class="number">+</div>
+                                </div>
+                                <div class="btn operations less" ng-click="append(' - ')">
+                                    <div class="number">-</div>
+                                </div>
+                        </div>
+                                
+                        <div class="row">
+                            <div class="btn" ng-click="append('7')">
+                                <div class="number">7</div>
+                            </div>
+                            <div class="btn" ng-click="append('8')">
+                                <div class="number">8</div>
+                            </div>
+                            <div class="btn" ng-click="append('9')">
+                                <div class="number">9</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="btn" ng-click="append('4')">
+                                <div class="number">4</div>
+                            </div>
+                            <div class="btn" ng-click="append('5')">
+                                <div class="number">5</div>
+                            </div>
+                            <div class="btn" ng-click="append('6')">
+                                <div class="number">6</div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="btn" ng-click="append('1')">
+                                <div class="number">1</div>
+                            </div>
+                            <div class="btn" ng-click="append('2')">
+                                <div class="number">2</div>
+                            </div>
+                            <div class="btn" ng-click="append('3')">
+                                <div class="number">3</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="btn" id="dot" ng-click="append('.')">
+                                <div class="number">.</div>
+                            </div>
+                            <div class="btn" ng-click="append('0')">
+                                <div class="number">0</div>
+                            </div>
+                                            <div class="btn">
+                                <div class="number"></div>
+                            </div>
+                            <div class="btn" id="result" ng-click="getResult()">
+                                <div class="number">=</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
+            <script src='https://codepen.io/ClementRoche/pen/OrGaMg.js'></script> -->
+            
+        </body>
+
+</html>
