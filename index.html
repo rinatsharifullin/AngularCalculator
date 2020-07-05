@@ -7,11 +7,11 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Title for your webpage -->
-            <title></title>
-            <!-- <meta name="keywords" content=""> -->
-            <!-- <meta name="description" content=""> -->
-            <!-- <meta name="author" content="Rinat Sharifullin"> -->
-            <!-- <link rel="shortcut icon" type="image/jpg" href="images/"> -->
+            <title>Angular calculator</title>
+            <meta name="keywords" content="Calculator online | Angular Calculator">
+            <meta name="description" content="Simple Angular Calculator. Part of Angular exercises">
+            <meta name="author" content="Rinat Sharifullin">
+            <link rel="shortcut icon" type="image/jpg" href="ico.jpg">
             <link rel="stylesheet" type="text/css" href="style.css">
             <!-- <style type="text/css"></style> -->
             <!-- <script src="https://kit.fontawesome.com/87e811ac08.js" crossorigin="anonymous"></script> -->
@@ -27,7 +27,7 @@
                     <div class="screen-container">
                         <div class="result">
                             <transition name="slide-fade">
-                            <div class="number" :style="{fontSize : fontSize + 'px'}" v-if="tempResult !== ''"  >{{ tempResult }}</div>
+                            <div class="number"  >{{ tempResult }}</div>
                             </transition>
                         </div>
                         <div class="calculation">
@@ -104,10 +104,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
-            <script src='https://codepen.io/ClementRoche/pen/OrGaMg.js'></script> -->
             
         </body>
 
